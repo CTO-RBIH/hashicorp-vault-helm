@@ -604,7 +604,7 @@ server:
   # volumeMounts is a list of volumeMounts for the main server container. These are rendered
   # via toYaml rather than pre-processed like the extraVolumes value.
   # The purpose is to make it easy to share volumes between containers.
-  volumeMounts: null
+  volumeMounts: 
     - name: tls-cert
       mountPath: /vault/userconfig/tls-cert
       readOnly: true
